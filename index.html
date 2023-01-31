@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulario de registro</h2>
+    <p>Por favor registre la información solicitada de manera correcta.</p>
+    <form action="submitTest.html" method="get" target="_blank">
+        <label for="first_name_input">Nombres:</label><br>
+        <input type="text" id="first_name_input"><br><br>
+        <label for="last_name_input">Apellidos:</label><br>
+        <input type="text" id="last_name_input"><br><br>
+        <label for="id_type">Tipo de documento:</label><br>
+        <select id="id_type">
+            <option value="0">Seleccione...</option>
+            <option value="1">Cédula de ciudadania</option>
+            <option value="2">Tarjeta de identidad</option>
+            <option value="3">Permiso especial de permanencia</option>
+            <option value="4">Documento extranjero</option>
+        </select><br><br>
+        <label for="id_number">Número de documento:</label><br>
+        <input type="number" step="1" min="0" max="9999999999"><br><br>
+        <label for="born_date">Fecha nacimiento:</label><br>
+        <input type="date"><br><br>
+        <label for="gender">Género:</label>
+        <input type="radio" name="gender" id="male" value="1">
+        <label for="male">Masculino</label>
+        <input type="radio" name="gender" id="female" value="0">
+        <label for="female">Femenino</label><br><br>
+        <label for="phone_number">Teléfono:</label>
+        <input type="tel" id="phone_number"><br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" placeholder="usario@dominio.com"><br><br>
+        <input type="reset">
+        <input type="submit" id="save" value="Guardar">
+
+    </form>
+</body>
+</html>
