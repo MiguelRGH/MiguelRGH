@@ -1,0 +1,20 @@
+.container_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: aquamarine;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+h3 {
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 5px;
+}
