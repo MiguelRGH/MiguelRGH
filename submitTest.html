@@ -7,6 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Submited</title>
+    <style>
+        div {
+            border: 1px solid #CCC;
+        }
+    </style>
 </head>
 <body>
     <div class="container_menu">
@@ -18,16 +23,45 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">Cuatro columnas de doce</div>
-            <div class="col-md-8">Ocho columnas de doce</div>
+            <div class="col-md-6">Columa que ocupa 6 espacios de 12 disponibles</div>
+            <div class="col-md-6">Columa que ocupa 6 espacios de 12 disponibles</div>
         <div class="row">
-            <div class="col-md-3">Tres columnas de doce</div>
-            <div class="col-md-3">Tres columnas de doce</div>
-            <div class="col-md-3">Tres columnas de doce</div>
-            <div class="col-md-3">Tres columnas de doce</div>
+            <div class="col-md-2">Columa que ocupa 2 espacios de 12 disponibles</div>
+            <div class="col-md-8">Columa que ocupa 8 espacios de 12 disponibles</div>
+            <div class="col-md-2">Columa que ocupa 2 espacios de 12 disponibles</div>
         </div>
+        <br><br><br>
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Firts Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Nick Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Miguel</td>
+                    <td>Rodriguez</td>
+                    <td>MigueRod</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Maria</td>
+                    <td>Talero</td>
+                    <td>MariTalero</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Daniel</td>
+                    <td>Rodriguez</td>
+                    <td>DanielR</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <hr>
     <p>Data sent</p>
 </body>
 </html>
