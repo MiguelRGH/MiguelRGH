@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawPieChart);
+        google.charts.setOnLoadCallback(drawColumnChart);
+
+
+        function loadData1() {
+            var votacion = new google.visualization.DataTable();
+            votacion.addColumn('string', 'Nombre');
+            votacion.addColumn('number', 'Votos');
+            votacion.addRows([
+                ['Pizza', 10],
+                ['Hamburguesa', 8],
+                ['Perro', 5],
+                ['Salchipapa', 16]
+            ])
+            return votacion;
+        }
+
+        function drawColumnChart() {
+            let columData = new google.visualization.arrayToDataTable([
+                ["Element", "Density"],
+                ["Copper", 8.94],
+                ["Silver", 10.49],
+                ["Gold", 19.30],
+                ["Platinum", 21.45]
+            ]);
+            let columOptions = {
+                title: "Density of Precious Metals, in g/cm^3",
+                width: 600,
+                height: 400,
+                bar: { groupWidth: "70%" },
+                legend: { position: "none" },
+            };
+            var columChart = new google.visualization.ColumnChart(document.getElementById("graphic2"));
+            columChart.draw(columData, columOptions);
+
+        }
+
+        function drawPieChart() {
+            let data = loadData1();
+            var options = {
+                'title': 'Comidas rápidas Don Pancho',
+                'width': 600,
+                'height': 500,
+                'is3D': true
+            };
+            var pieChart = new google.visualization.PieChart(document.getElementById('graphic'));
+            pieChart.draw(data, options);
+        }
+    </script>
+    <title>Google chart graphic</title>
+</head>
+
+<body>
+    <div id="graphic"></div>
+    <div id="graphic2"></div>
+    <div id="graphic3"></div>
+</body>
+
+</html>
